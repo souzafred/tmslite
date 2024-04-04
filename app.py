@@ -3133,6 +3133,7 @@ class TelaPrincipal:
         self.master.geometry('800x600')  # Tamanho maior para a tela principal
         centralizar_janela_login(self.master, 800, 600)
         master.iconbitmap(icon_path)
+        self.master.resizable(False, False)
         
         background_image_path = 'assets/image_32.png'
 
