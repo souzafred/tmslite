@@ -3240,3 +3240,6 @@ if __name__ == "__main__":
     # root.iconbitmap('tms.ico')
     root.mainloop()
     
+    
+    #Aplicação desenvolvida por Alfredo Gonçalves de Souza Santos.
+    
