@@ -19,7 +19,6 @@ locale.setlocale(locale.LC_ALL, 'pt_BR.UTF-8')
 
 icon_path = 'tms.ico'
 
-
 class DatabaseManager:
     def __init__(self, db_name):
         self.conn = sqlite3.connect(db_name)
