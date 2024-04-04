@@ -3141,12 +3141,12 @@ class TelaPrincipal:
 
         # Cria um label e coloca a imagem de fundo nele
         self.background_label = ttk.Label(self.master, image=self.background_image)
-        self.background_label.place(x=0, y=0, relwidth=1, relheight=1)
+        self.background_label.place(x=-0.98, y=0, relwidth=1.02, relheight=1)
         
         # Aplica tema escuro e configura estilos, semelhante à tela de login
-        self.master.configure(background='#333333')
+        self.master.configure(background='#D9D9D9')
         style = ttk.Style(self.master)
-        style.theme_use('clam')  # Usar o tema 'clam' como base para personalização
+        style.theme_use('clam') 
 
         # Definição de cores e estilos
         cor_fundo = '#333333'
