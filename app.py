@@ -3237,7 +3237,6 @@ if __name__ == "__main__":
     root = tk.Tk()
     app = LoginScreen(root)
     root.protocol("WM_DELETE_WINDOW", app.on_close)
-    # root.iconbitmap('tms.ico')
     root.mainloop()
     
     
