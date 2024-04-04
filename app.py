@@ -7,17 +7,11 @@ import datetime
 import locale
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 from matplotlib.figure import Figure
-# import plotly.graph_objs as go
-# from plotly.subplots import make_subplots
 import matplotlib.pyplot as plt
 from pathlib import Path
 from tkinter import Canvas,  PhotoImage 
 import pandas as pd
-# import textwrap
 from matplotlib import style
-# import matplotlib.colors as mcolors
-# import os
-# from matplotlib import patheffects
 import squarify
 import seaborn as sns
 
@@ -1727,7 +1721,6 @@ class CadastroSolicitacaoEntrega(tk.Toplevel):
         self.update_idletasks()
         self.after(10, self.mostrar_janela)
 
-        
     def mostrar_janela(self):
         self.deiconify()
 
@@ -2308,6 +2301,8 @@ def autopct_format(values):
 class Dashboard(tk.Toplevel):
     def __init__(self , master=None, **kw):
         super().__init__(master=master, **kw)
+        self.withdraw()
+
         self.title("Dashboard")
 
         self.configure(bg="#333333")
@@ -2320,7 +2315,13 @@ class Dashboard(tk.Toplevel):
 
         self.protocol("WM_DELETE_WINDOW", self.fechar_dashboard)
         self.iconbitmap(icon_path)
+        
+        self.update_idletasks()
+        self.after(50, self.mostrar_janela)
 
+    def mostrar_janela(self):
+        self.deiconify()
+        
     def fechar_dashboard(self):
         # Este loop destrói todos os widgets filhos, garantindo que recursos sejam liberados
         for widget in self.winfo_children():
