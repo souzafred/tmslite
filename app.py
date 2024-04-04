@@ -2246,7 +2246,6 @@ class EditarStatusWindow(tk.Toplevel):
         self.preencher_informacoes()
         self.iconbitmap(icon_path)
     
-        
     def create_widgets(self):
         # Criação dos widgets
         self.info_label = ttk.Label(self, text="")
@@ -3135,6 +3134,14 @@ class TelaPrincipal:
         centralizar_janela_login(self.master, 800, 600)
         master.iconbitmap(icon_path)
         
+        background_image_path = 'assets/image_32.png'
+
+        self.background_image = PhotoImage(file=background_image_path)
+
+        # Cria um label e coloca a imagem de fundo nele
+        self.background_label = ttk.Label(self.master, image=self.background_image)
+        self.background_label.place(x=0, y=0, relwidth=1, relheight=1)
+        
         # Aplica tema escuro e configura estilos, semelhante à tela de login
         self.master.configure(background='#333333')
         style = ttk.Style(self.master)
@@ -3154,7 +3161,7 @@ class TelaPrincipal:
         style.map('TButton', background=[('active', cor_botao)], foreground=[('active', cor_botao_frente)])
         
         centralizar_janela_login(self.master, 900, 600)
-        self.mostrar_boas_vindas()       
+        # self.mostrar_boas_vindas()       
         self.configurar_menu()
 
     def on_close(self):
