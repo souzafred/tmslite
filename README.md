@@ -3,7 +3,7 @@
 TMSLite é uma aplicação de gerenciamento de transportes, otimizada para facilitar a gestão de cargas, rotas, veículos e entregas.
 
 <p align="center">
-  <img width="460" height="300" src="https://github.com/souzafred/tmslite/blob/main/assets/image_32.png">
+  <img width="900" height="600" src="https://github.com/souzafred/tmslite/blob/main/assets/image_32.png">
 </p>
 
 
