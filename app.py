@@ -3197,7 +3197,7 @@ class TelaPrincipal:
         # Adiciona menu 'Painel'
         menu_painel = tk.Menu(self.menubar, tearoff=0)
         menu_painel.add_command(label="Painel de Controle", command=self.abrir_dashboard)
-        self.menubar.add_cascade(label="Painel", menu=menu_painel)
+        self.menubar.add_cascade(label="Dashboard", menu=menu_painel)
 
     def mostrar_boas_vindas(self):
         # Define uma fonte maior para a saudação
