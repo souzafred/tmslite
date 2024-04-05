@@ -29,7 +29,7 @@ cd tmslite
 - Pandas
 - Seaborn
 - Tkcalendar
-- ... (outros, conforme necessário)
+- ... (entre outros)
 
 Para a lista completa, consulte o arquivo `requirements.txt`.
 
