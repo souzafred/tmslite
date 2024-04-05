@@ -17,7 +17,7 @@ TMSLite é uma aplicação de gerenciamento de transportes, otimizada para facil
 
 Certifique-se de ter Python instalado em seu sistema. Este projeto foi testado com Python 3.11.5.
 
-1. Baixe o repositório ou Clone o com :
+1. Baixe o repositório ou Clone o repositório com :
 git clone https://github.com/souzafred/tmslite.git
 
 2. Navegue até o diretório do projeto :
